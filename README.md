@@ -71,7 +71,7 @@ To view or run the project locally:
 cd student-fun-gallery 
 
 🔗 View Live
-(https://itm-photo-gallery.netlify.app/) 🌐 Live Demo
+(https://comfy-sorbet-8c150b.netlify.app/) 🌐 Live Demo
 
 
 
