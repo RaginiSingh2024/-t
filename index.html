@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Student Fun Moments Gallery</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="branding">
+        <img src="Assets/images/ISU-LOGO.webp" alt="ITM Logo" class="logo" />
+  <header>
+    <h1> 🎉🎶 𝐒𝐭𝐮𝐝𝐞𝐧𝐭 𝐅𝐮𝐧 𝐌𝐨𝐦𝐞𝐧𝐭𝐬 𝐆𝐚𝐥𝐥𝐞𝐫𝐲 😎💕</h1>
+    <p>Celebrate the best memories from campus life at ITM!</p>
+  </header>
+</div> 
+  <div class="section-tabs">
+    <button class="section-tab active" data-section="images">Images</button>
+    <button class="section-tab" data-section="videos">Videos</button>
+  </div>
+
+  <section id="images-section" class="content-section active">
+    <div class="category-buttons">
+      <button class="category-btn active" data-category="all">All</button>
+      <button class="category-btn" data-category="industry">Industry Lecture</button>
+      <button class="category-btn" data-category="sports">Sports</button>
+      <button class="category-btn" data-category="fun">Fun Activities</button>
+    </div>
+
+    <div class="gallery">
+      <div class="gallery-item" data-category="industry">
+        <img src="Assets/images/img1.jpg" alt="Industry Lecture 1" />
+      </div>
+      <div class="gallery-item" data-category="industry">
+        <img src="Assets/images/img2.jpg" alt="Industry Lecture 2" />
+      </div>
+      <div class="gallery-item" data-category="sports">
+        <img src="Assets/images/img3.jpg" alt="Sports Event 1" />
+      </div>
+      <div class="gallery-item" data-category="sports">
+        <img src="Assets/images/img4.jpg" alt="Sports Event 2" />
+      </div>
+      <div class="gallery-item" data-category="fun">
+        <img src="Assets/images/img5.jpg" alt="Fun Activity 1" />
+      </div>
+      <div class="gallery-item" data-category="fun">
+        <img src="Assets/images/img6.jpg" alt="Fun Activity 2" />
+      </div>
+      <div class="gallery-item" data-category="fun">
+        <img src="Assets/images/img7.jpg" alt="Fun Activity 3" />
+      </div>
+    </div>
+  </section>
+
+  <section id="videos-section" class="content-section">
+    <div class="category-buttons">
+      <button class="category-btn active" data-category="all">All</button>
+      <button class="category-btn" data-category="industry">Industry Lecture</button>
+      <button class="category-btn" data-category="sports">Sports</button>
+      <button class="category-btn" data-category="fun">Fun Activities</button>
+    </div>
+
+    <div class="gallery">
+      <div class="gallery-item" data-category="industry">
+        <video controls>
+          <source src="Assets/Videos/video1.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <p class="video-title">Industry Talk 1</p>
+      </div>
+      <div class="gallery-item" data-category="sports">
+        <video controls>
+          <source src="Assets/Videos/video2.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <p class="video-title">Sports Event Video</p>
+      </div>
+      <div class="gallery-item" data-category="fun">
+        <video controls>
+          <source src="Assets/Videos/video3.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <p class="video-title">Fun Activity Highlights</p>
+      </div>
+    </div>
+  </section>1
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox">
+    <span class="close">&times;</span>
+    <img class="lightbox-content" id="lightbox-img" />
+    <div id="caption"></div>
+  </div>
+
+  <footer>
+    © ITM Skills University 2024.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

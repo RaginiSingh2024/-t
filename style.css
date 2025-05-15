@@ -1,0 +1,254 @@
+* {
+    box-sizing: border-box;
+    border: dark black;
+    margin: 2;
+    padding: 2;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background: hsl(60, 8%, 97%);
+    color: #c81f1f;
+  }
+  
+ .branding{
+    text-align: center;
+    padding: 5px;
+    background: linear-gradient(135deg, #A91D54, #A91D54);
+    color: rgb(252, 252, 252);
+    display: flex;
+    align-items: center;
+    gap: 400px;
+  }
+  .branding img{
+   height:60px;
+   display: flex;
+   justify-content: left;
+   border: dark black;
+  }
+
+  header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  header p {
+    font-size: 1.1rem;
+  }
+
+  .section-tabs {
+    text-align: center;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .section-tab {
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    border: none;
+    background-color: #f0f0f0;
+    color: #666;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .section-tab:hover {
+    background-color: #A91D54;
+    color: white;
+  }
+
+  .section-tab.active {
+    background-color: #A91D54;
+    color: white;
+  }
+
+  .content-section {
+    display: none;
+  }
+
+  .content-section.active {
+    display: block;
+  }
+
+  .category-buttons {
+    text-align: center;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .category-btn {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    border: 2px solid #A91D54;
+    background-color: white;
+    color: #A91D54;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .category-btn:hover {
+    background-color: #A91D54;
+    color: white;
+  }
+
+  .category-btn.active {
+    background-color: #A91D54;
+    color: white;
+  }
+  
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);  /* 4 fixed columns */
+    gap: 25px;
+    padding: 4rem 2rem;
+  }
+  
+  
+  .gallery-item {
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .gallery-item img,
+  .gallery-item video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    cursor: pointer;
+    transition: transform 0.4s ease, box-shadow 0.3s ease;
+    border: 4px solid #030303;
+    border-radius: 10px;
+  }
+
+  .video-title {
+    text-align: center;
+    margin-top: 0.5rem;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  
+  .gallery-item:hover img {
+    transform: scale(1.07);
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+  
+    /* Add this */
+    border-color: #050505; /* hot pink or any color */
+  }
+  
+  
+  /* Lightbox Styles */
+  .lightbox {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.95);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: black;
+  }
+  
+  .lightbox.show {
+    display: flex;
+  }
+  
+  .lightbox-content {
+    max-width: 90%;
+    max-height: 80vh;
+    border-radius: 10px;
+    animation: fadeIn 0.4s ease;
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.2);
+  }
+  
+  #caption {
+    color: #f1f1f1;
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    text-align: center;
+    padding: 0 20px;
+  }
+  
+  .close {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .close:hover {
+    color: #aaa;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: scale(0.85);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  @media (max-width: 600px) {
+    header h1 {
+      font-size: 1.7rem;
+    }
+  
+    .gallery {
+      padding: 2rem 1rem;
+      gap: 15px;
+    }
+  }
+  @media (max-width: 992px) {
+    .gallery {
+      grid-template-columns: repeat(2, 1fr); /* 2 per row on tablets */
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .gallery {
+      grid-template-columns: 1fr; /* 1 per row on phones */
+    }
+  }
+  
+  
+  
+  .title-group h1 {
+    font-size: 2.2rem;
+    margin: 0;
+    line-height: 1.2;
+  }
+  
+  .title-group p {
+    font-size: 1.1rem;
+    margin: 0.2rem 0 0;
+  }
+  footer {
+    text-align: center;
+    padding: 2rem;
+    background: #A91D54; /* Match your header theme */
+    color: white;
+    font-size: 1rem;
+    margin-top: 3rem;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
