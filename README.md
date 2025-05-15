@@ -68,14 +68,12 @@ To view or run the project locally:
    ```bash
    git clone https://github.com/RaginiSingh2024/student-fun-gallery.git
    
-cd student-fun-gallery 🌐 Live Demo
+cd student-fun-gallery 
 
 🔗 View Live
 (https://itm-photo-gallery.netlify.app/) 🌐 Live Demo
 
-🔗 View Live
-(https://itm-photo-gallery.netlify.app/)
 
 
-[view Live](https://itm-photo-gallery.netlify.app/)
+
  
